@@ -1,30 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Pattaya&family=Allan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Allan&display=swap');
 
-/* Script Cek <body>
-/* body { 
-	background-color:red;
-	font-size:16px
-	color:#444;
-	font-family: sans-serif;
-} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-
-/* .parallax { -> Asli e gawe iki nek terpisah, gak full body */
 body {
 	margin:0;
 	padding:0;
-
+	width: 100%;
+	/* height: 100vh; */
+	background: linear-gradient(135deg, #9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
+  
+	/* --> START CSS di bawah bila ingin model Parallax */
 	/* The image used */
-	background-image: url("bgE.jpg");
+	/* background-image: url("bgE.jpg"); */
 	
-  /* Set a specific height */
-  // min-height: 500px;
+	/* Set a specific height */
+	/* min-height: 500px; */
 
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	/* background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
+	/* --> END CSS di bawah bila ingin model Parallax */
 }
 
 /* ==> Start CSS Running Text iNFiNiTY Scroll Kanan ke Kiri */
@@ -65,7 +68,7 @@ body {
 }
 /* ScrollTop End */
 
-.content{
+.area-utama-konten{
 	width: 80%;
 	margin: 10px auto;
 }
@@ -336,4 +339,20 @@ div.bawah{
   .right {
   left: 0%;
   }
+}
+
+
+/* Buat Jam */
+.clock{
+  background: #131419;
+  height: 50px;
+  text-align: center;
+  padding: 0 30px;
+
+}
+.clock .display{
+  font-size: 30px;
+  color: cyan;
+  letter-spacing: 5px;
+  font-family: 'Orbitron', sans-serif;
 }
